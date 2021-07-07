@@ -10,3 +10,5 @@ PyYAML
 spamwatch
 tgcrypto
 toml
+flask
+flask_restful
