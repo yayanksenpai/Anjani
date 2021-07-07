@@ -21,6 +21,8 @@ RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-
 
 RUN poetry config virtualenvs.create false
 RUN poetry install --no-root --no-dev -E uvloop
+RUN pip install flask
+RUN pip install flask_restful
 
 # command to run on container start
 CMD ["bash","start.sh"]
